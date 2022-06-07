@@ -13,6 +13,7 @@
   font-weight: bold;
   font-style: normal;
 }
+
 .main,
 .main input {
   font-size: 16px;
@@ -22,9 +23,9 @@
 }
 .main {
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding-top: 60px;
+  flex-direction: row;
+  align-items: right;
+  padding: 20px 100px 10px 100px;
 }
 .main .icon {
   width: 34px;
@@ -39,13 +40,26 @@
 .main form {
   display: flex;
   flex-direction: column;
-  width: 320px;
+  width: 40%;
 }
 .main input[type="text"] {
   padding: 12px 16px;
   border: 1px solid #10a37f;
   border-radius: 4px;
   margin-bottom: 24px;
+  /* width: 320px; */
+}
+
+.main textarea {
+  padding: 12px 16px;
+  border: 1px solid #10a37f;
+  border-radius: 4px;
+  margin-bottom: 24px;
+  height: 120px;
+  font-size: 16px;
+  line-height: 24px;
+  color: #353740;
+  font-family: "ColfaxAI", Helvetica, sans-serif;
 }
 .main ::placeholder {
   color: #8e8ea0;
@@ -61,6 +75,27 @@
   cursor: pointer;
 }
 .main .result {
-  font-weight: bold;
+  display: flex;
+  flex-direction: column;
+  width: 60%;
+  text-align: justify;
   margin-top: 40px;
+  padding-left: 100px;
+}
+
+.city{
+  font-size: 32px;
+  line-height: 40px;
+  font-weight: bold;
+  color: #202123;
+  margin: 16px 0 10px;
+  text-align: center;
+  font-family: "ColfaxAI", Helvetica, sans-serif;
+
+}
+
+.loader{
+  display: flex;
+  padding-left: 20px;
+
 }
