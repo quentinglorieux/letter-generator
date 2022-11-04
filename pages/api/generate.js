@@ -29,7 +29,7 @@ function generatePrompt(student) {
   student.studentName[0].toUpperCase() + student.studentName.slice(1).toLowerCase();
   return `Write a long recommendation letter from ${student.myName} for the program ${student.programName} for student based on these notes:
 
-  Name: ${capitalizedStudent}
+  Name: ${student.studentName}
   Skills: ${student.studentSkills}
   Affiliation: ${student.studentAffiliation}
   Duration: ${student.studentDuration}
