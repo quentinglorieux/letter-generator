@@ -27,7 +27,7 @@ function generatePrompt(student) {
   // const studentSkills= student.studentSkills;
   const capitalizedStudent =
   student.studentName[0].toUpperCase() + student.studentName.slice(1).toLowerCase();
-  return `Write a long recommendation letter from ${student.myName} for the program ${student.programName} for student based on these notes:
+  return `Write a very long recommendation letter from ${student.myName} for the program ${student.programName} for student based on these notes:
 
   Name: ${student.studentName}
   Skills: ${student.studentSkills}
